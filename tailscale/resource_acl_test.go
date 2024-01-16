@@ -62,7 +62,17 @@ const testACL = `
 					"User": "user2@example.com",
 					"Allow": ["100.60.3.4:22"]
 				}
-			]
+			],
+			"Grants": [{
+				"Src": ["group:prod"],
+				"Dst": ["tag:tailsql"],
+				"IP": ["443"],
+				"App": {
+					"tailscale.com/cap/tailsql": [{
+						"dataSrc": ["*"],
+					}],
+				},
+			}]
 		}
 		EOF
 	}`
