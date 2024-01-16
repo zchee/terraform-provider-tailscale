@@ -4,6 +4,8 @@ go 1.21
 
 toolchain go1.21.0
 
+replace github.com/tailscale/tailscale-client-go => github.com/zchee/tailscale-client-go v1.15.1-0.20240117001559-ff53a65ed687
+
 require (
 	github.com/google/go-cmp v0.6.0
 	github.com/hashicorp/go-cty v1.4.1-0.20200414143053-d3edf31b6320
@@ -14,7 +16,7 @@ require (
 	github.com/tailscale/hujson v0.0.0-20221223112325-20486734a56a
 	github.com/tailscale/tailscale-client-go v1.15.0
 	golang.org/x/tools v0.16.0
-	tailscale.com v1.54.1
+	tailscale.com v1.56.1
 )
 
 require (
